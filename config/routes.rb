@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+
   devise_for :users
-  get 'welcome/home'
+
+  authenticated :user do
+    root to: "users#show", as: :authenticated_root
+  end
+
   root 'welcome#home'
+
+
 end
