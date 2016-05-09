@@ -17,6 +17,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-inline'
   gem 'rb-readline'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 gem 'devise'
