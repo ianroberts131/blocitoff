@@ -10,9 +10,8 @@
 <body>
   <div class='container'>
     <% if user_signed_in? %>
-      Signed in as: <strong><%= current_user.email%></strong>
       <div class="pull-right edit-profile">
-        <%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link' %> | <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'navbar-link' %>
+        <%= link_to 'Home', authenticated_root_path %> | <%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link' %> | <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'navbar-link' %>
       </div>
     <% else %>
       <div class="pull-right log-in">

@@ -1,5 +1,19 @@
-<h1>Profile</h1>
+<h4>My Info</h4>
 <div>
-  <h3 id="header">Email: </h3>
+  <h4 id="header">Email: </h4>
   <h4 id="email"><%= @user.email %></h4>
+  
+  <table>
+    <td id="title" colspan="3">My To-do List</tr>
+    <tr>
+      <th>Description</th>
+      <th>Days Left</th>
+      <th>Complete</th>
+    </tr>
+    <% @user.items.each do |item| %>
+      <%= render partial: 'items/item', locals: {item: item} %>
+    <% end %>
+  </table>
+  
+  <%= render 'items/form', item: @user.items.new %>
 </div>

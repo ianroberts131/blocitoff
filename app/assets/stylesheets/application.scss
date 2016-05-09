@@ -16,10 +16,34 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-image: url("http://koolbeanscoffee.net/wp-content/uploads/2015/02/coffee-on-table-960x416.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #FFFFFF;
+  
+}
+
 .log-in {
   margin-top: 5px;
 }
 
 .edit-profile {
   margin-top: 5px;
+}
+
+a:link{
+  color:#FFFFFF;
+}
+a:visited{
+  color:#FFFFFF;
+}
+a:hover{
+  color:#FFFFFF;
+}
+a:focus{
+  color:#FFFFFF;
+}
+a:active{
+  color:#FFFFFF;
 }

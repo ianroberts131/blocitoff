@@ -1,6 +1,7 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 #header {
   display: inline-block;
   margin-right: 10px;
@@ -8,4 +9,26 @@
 
 #email {
   display: inline-block;
+}
+
+#title {
+  font-size: 25px;
+  text-align: center;
+}
+
+table {
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+th {
+  border-bottom: 2px solid;
+  font-size: 20px;
+  padding: 15px;
+}
+
+td {
+  font-size: 20px;
+  padding: 15px;
 }
