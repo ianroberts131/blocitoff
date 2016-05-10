@@ -6,9 +6,9 @@
   <table>
     <td id="title" colspan="3">My To-do List</tr>
     <tr>
-      <th>Description</th>
-      <th>Days Left</th>
-      <th>Complete</th>
+    <th>Description</th>
+    <th>Days Left</th>
+    <th>Complete</th>
     </tr>
     <% @user.items.each do |item| %>
       <%= render partial: 'items/item', locals: {item: item} %>

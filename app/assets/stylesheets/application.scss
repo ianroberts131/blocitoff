@@ -17,11 +17,10 @@
 @import "bootstrap";
 
 body {
-  background-image: url("http://koolbeanscoffee.net/wp-content/uploads/2015/02/coffee-on-table-960x416.jpg");
+  background-image: asset-url('coffee-on-table-960x416.png');
   background-repeat: no-repeat;
   background-size: 100%;
   color: #FFFFFF;
-  
 }
 
 .log-in {
