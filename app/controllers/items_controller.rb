@@ -11,6 +11,21 @@ class ItemsController < ApplicationController
       flash[:alert] = "Items failed to save."
     end
   end
+  
+  def destroy
+    @item = Item.find(params[:id])
+    
+    if @item.destroy
+      flash[:notice] = "Item was deleted successfully."
+    else
+      flash[:alert] = "There was an error deleting the item."
+    end
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
 
 private
   def item_params

@@ -21,6 +21,16 @@
         <%= link_to "Sign In", new_user_session_path, class: 'navbar-link' %>
       </div>
     <% end %>
+    
+    <% if flash[:notice] %>
+      <div>
+        <%= flash[:notice] %>
+      </div>
+    <% elsif flash[:alert] %>
+      <div>
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
 
 <%= yield %>
 
