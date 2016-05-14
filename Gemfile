@@ -7,6 +7,8 @@ gem 'rails', '4.2.6'
 
 gem 'faker'
 
+gem 'whenever', :require => false
+
 group :test do
   gem 'shoulda-matchers', '~> 3.1'
 end
