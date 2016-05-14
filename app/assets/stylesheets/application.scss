@@ -17,10 +17,14 @@
 @import "welcome";
 @import "users";
 
+html {
+  height: 100%;
+}
+
 body {
   background-image: asset-url('coffee-on-table-960x416.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #FFFFFF;
 }
 
