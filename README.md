@@ -1,11 +1,9 @@
 #Blocitoff
-A self-destructing to-do list application
-
 This is the first application I built as part of Bloc's Rails Web Development course.
 
 To-do lists frequently get out of hand, collecting items that aren't particularly important and thus get pushed off. Blocitoff was developed to help you stay focused on only the most important tasks. To do this, the application deletes items not completed after seven days.
 
-Sign in/authentication was developed using the devise gem, and updated as needed.
+Sign in/authentication was developed using the [devise](https://github.com/plataformatec/devise) gem, and updated as needed.
 
 Items are added and removed easily:
 
@@ -13,7 +11,7 @@ Items are added and removed easily:
 
 The delete functionality was developed using the destroy action and jQuerey's hide() function to avoid page loads whenever an item is removed:
 
-View (_item.html.erb partial):
+View ( _item.html.erb partial ):
 
 ```html
 <tr id='item-<%= item.id %>'>
